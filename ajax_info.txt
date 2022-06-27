@@ -1,0 +1,4 @@
+<h1>AJAX</h1>
+<p>Fehler beim verbinden</p>
+<p>ERROR 404</p>
+<p>AJAX stands for Asynchronous JavaScript And XML.</p>

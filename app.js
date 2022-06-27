@@ -124,9 +124,9 @@ currentProductSizes.forEach((size, index) => {
   });
 });
 
+const close = document.querySelector(".close");
 const productButton = document.querySelector(".productButton");
 const payment = document.querySelector(".payment");
-const close = document.querySelector(".close");
 
 productButton.addEventListener("click", () => {
   payment.style.display = "flex";
@@ -135,3 +135,27 @@ productButton.addEventListener("click", () => {
 close.addEventListener("click", () => {
   payment.style.display = "none";
 });
+
+const loginclose = document.querySelector(".loginclose");
+const loginButton = document.querySelector(".loginButton");
+const login = document.querySelector(".login");
+
+loginButton.addEventListener("click", () => {
+  login.style.display = "flex";
+});
+
+loginclose.addEventListener("click", () => {
+  login.style.display = "none";
+});
+
+
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("login").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}

@@ -14,6 +14,29 @@ nav {
     padding: 20px 50px;
 }
 
+span{
+  margin-right: 240px;
+}
+
+.navHome{
+  background-color: #111;
+  color: white;
+  padding: 20px 50px;
+
+}
+.navAdd{
+  background-color: rgb(255, 102, 0);
+  color: white;
+  padding: 20px 50px;
+
+}
+.navPro{
+  background-color: rgba(3, 175, 109, 0.76);
+  color: white;
+  padding: 20px 50px;
+
+}
+
 .navTop {
     display: flex;
     align-items: center;
@@ -380,6 +403,24 @@ nav {
     cursor: pointer;
   }
   
+  .addButton {
+    float: right;
+    padding: 10px 20px;
+    background-color: rgb(255, 102, 0);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration:none;
+  }
+  .showProductsButton {
+    float: right;
+    padding: 10px 20px;
+    background-color: rgba(3, 175, 109, 0.76);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
   .productButton:hover {
     background-color: white;
     color: black;
@@ -604,4 +645,10 @@ nav {
       width: 90%;
       padding: 20px;
     }
+  }
+
+  .formBody {
+    padding: 20px;
+    background: #fafafa;
+    position: relative;
   }

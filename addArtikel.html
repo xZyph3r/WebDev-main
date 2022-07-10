@@ -8,10 +8,16 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <title>Webshop</title>
 </head>
 <body>
-<nav id="nav">
+<nav id="nav" class ="navAdd">
 <div class="navTop">
     <div class="navItem">
         <a href="index.html">
@@ -25,62 +31,76 @@
         </div>
     </div>
     <div class="navItem">
-        <a class="Option" href="addArtikel.html">Produkt Hinzufügen</a>
     </div>
-</div>
-<div class="navBottom">
-    <h3 class="menuItem">AIR FORCE</h3>
-    <h3 class="menuItem">JORDAN</h3>
-    <h3 class="menuItem">BLAZER</h3>
-    <h3 class="menuItem">CRATER</h3>
-    <h3 class="menuItem">WING</h3>
 </div>
 </nav>
 
---Inhalt--
-<form>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname">
-</form>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
---Inhalt Ende--
+<div class="formBody">
+    <div class="ueschrift">
+        <span>Add Product</span>
+        <span>Update Value</span>
+    </div>
+    <div style="display:flex">
+        <form action="insertDB.php" method="post"  style="justify-content:space-between">
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="fname" name="fname">
+                <label class="mdl-textfield__label" for="fname" >Modell...</label>
+            </div><br>
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="fpreis" name="fpreis">
+                <label class="mdl-textfield__label" for="fpreis">Preis...</label>
+            </div><br>
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="ffarbe" name="ffarbe">
+                <label class="mdl-textfield__label" for="ffarbe">Farbe...</label>
+            </div><br>
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="fgroeße" name="fgroeße">
+                <label class="mdl-textfield__label" for="fgroeße">Größe...</label>
+            </div><br>
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="fanzahl" name="fanzahl">
+                <label class="mdl-textfield__label" for="fanzahl">Anzahl...</label>
+            </div><br>
+            <div>
+                <input type="submit" name="submit" value="submit">
+            </div>
+        </form>
+
+    <div style="padding: 0px 20px">
+        <form action="updateDB.php" method="post" >
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="fname" name="fname">
+                <label class="mdl-textfield__label" for="fname" >Modell...</label>
+            </div><br>
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="ffarbe" name="ffarbe">
+                <label class="mdl-textfield__label" for="ffarbe">Farbe...</label>
+            </div><br>
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="fgroeße" name="fgroeße">
+                <label class="mdl-textfield__label" for="fgroeße">Größe...</label>
+            </div><br>
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="fanzahl" name="fanzahl">
+                <label class="mdl-textfield__label" for="fanzahl">Anzahl...</label>
+            </div><br>
+            <div>
+                <input type="submit" name="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</div>
+
 
 <footer>
     <div class="footerLeft">
         <div class="footerMenu">
             <h1 class="fMenuTitle">About Us</h1>
             <ul class="fList">
-                <li class="fListItem">Company</li>
-                <li class="fListItem">Contact</li>
-                <li class="fListItem">Careers</li>
+                <li onclick="location.href='Kontakt.html';"class="fListItem">Contact</li>
+                <li onclick="location.href='AGB.html';"class="fListItem">AGB</li>
+                <li onclick="location.href='Impressum.html';"class="fListItem">Impressum</li>
                 <li class="fListItem">Affiliates</li>
                 <li class="fListItem">Stores</li>
             </ul>
@@ -129,6 +149,7 @@
     </div>
 </footer>
 <script src="./app.js"></script>
+
 </body>
 
 </html>

@@ -11,7 +11,7 @@
     <title>Webshop</title>
 </head>
 <body>
-<nav id="nav">
+<nav class ="navHome" id="nav">
 <div class="navTop">
     <div class="navItem">
         <a href="index.html"> <img alt="" src="./img/sneakers.png"> </a>
@@ -23,8 +23,9 @@
         </div>
     </div>
     <div class="navItem">
-        <a class="Option" href="addArtikel.html">Produkt Hinzufügen</a>
         <button class="loginButton" >Login</button>
+        <button class="showProductsButton" onclick="location.href='products.html';">Products</button>
+        <button class="addButton" onclick="location.href='addArtikel.html';">Produkt Hinzufügen</button>
     </div>
 </div>
 <div class="navBottom">
@@ -91,6 +92,7 @@
     <label>Password</label>
     <input type="password" placeholder="Password" class="payInput">
     <button class="productButton" onclick="loadDoc()">Login</button>
+    
     <span class="loginclose">X</span>
 </div>
 
@@ -201,9 +203,9 @@
         <div class="footerMenu">
             <h1 class="fMenuTitle">About Us</h1>
             <ul class="fList">
-                <li class="fListItem">Company</li>
-                <li class="fListItem">Contact</li>
-                <li class="fListItem">Careers</li>
+                <li onclick="location.href='Kontakt.html';"class="fListItem">Contact</li>
+                <li onclick="location.href='AGB.html';"class="fListItem">AGB</li>
+                <li onclick="location.href='Impressum.html';"class="fListItem">Impressum</li>
                 <li class="fListItem">Affiliates</li>
                 <li class="fListItem">Stores</li>
             </ul>
@@ -211,7 +213,7 @@
         <div class="footerMenu">
             <h1 class="fMenuTitle">Useful Links</h1>
             <ul class="fList">
-                <li class="fListItem">Support</li>
+                <li  class="fListItem">Support</li>
                 <li class="fListItem">Refund</li>
                 <li class="fListItem">FAQ</li>
                 <li class="fListItem">Feedback</li>

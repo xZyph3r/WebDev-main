@@ -1,6 +1,7 @@
 const wrapper = document.querySelector(".sliderWrapper");
 const menuItems = document.querySelectorAll(".menuItem");
 
+//Array
 const products = [
   {
     id: 1,
@@ -163,6 +164,8 @@ function loadDoc() {
   xhttp.send();
 }
 
+
+//AJAX
 function showUser(str) {
   if (str == "") {
     document.getElementById("txtHint").innerHTML = "";
